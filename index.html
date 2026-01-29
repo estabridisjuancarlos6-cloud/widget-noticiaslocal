@@ -3,6 +3,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src
+          'self'
+          'sha256-oANWp/2NMff6vgcZrosL/aTtxSYgv192LYnffH+z1Z4=';
+        style-src
+          'self'
+          'unsafe-inline'
+          https://fonts.googleapis.com;
+        img-src
+          'self'
+          https://images.weserv.nl
+          data:;
+        connect-src
+          https://rss.app;
+        font-src
+          'self'
+          https://fonts.gstatic.com;
+        object-src 'none';
+        frame-src 'none';
+        base-uri 'self';
+      ">
     <title>Noticias Locales</title>
 
     <style>
@@ -267,6 +290,3 @@
     </script>
 </body>
 </html>
-
-
-
